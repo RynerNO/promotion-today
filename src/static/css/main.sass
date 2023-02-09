@@ -1,0 +1,249 @@
+@import "import/reset"
+@import "import/mixin"
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Poppins:wght@400;500;600;700&display=swap');
+
+body
+    background-color: #F8EEFF
+.wrapper 
+    padding: toRem(31) toRem(64)
+    background-color: #fff
+    max-width: toRem(1066)
+    margin: 0 auto
+.header 
+    display: flex
+    align-items: center
+.logo
+    display: flex
+    align-items: center
+    img:nth-child(2)
+        display: none
+    p 
+        padding-left: toRem(5)
+        font-family: "Poppins"
+        font-weight: 700
+        font-size: toRem(15)
+        span:first-of-type
+            color: #35BE65
+.mobile-nav
+    display: none
+.nav 
+    margin-left: auto
+    margin-right: toRem(50)
+    ul
+        display: flex
+        li
+            font-family: "DM Sans"
+            text-transform: uppercase
+            font-size: toRem(12.5)
+            color: #2D3B46
+            margin-right: toRem(29)
+        li:hover
+                text-decoration: underline
+                cursor: pointer
+.dropdown
+    display: flex
+    align-items: center
+    img
+        margin-left: toRem(4)
+        
+
+.content
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+.content
+    &__text
+        p, h1
+            font-family: "Poppins"
+        p
+            max-width: toRem(466)
+        p::first-of-type
+            font-size: toRem(14.81)
+            @media(max-width: 612px)
+                font-size: toRem(14)
+            font-weight: 500
+            color: #333333
+        h1 
+            font-size: toRem(47.38)
+            color: #393939
+            @media(max-width: 612px)
+                font-size: toRem(30)
+            font-weight: 700
+            max-width: toRem(491)
+        p:last-of-type
+            font-weight: 400
+            font-size: toRem(18)
+            color: #2C2C2C
+            @media(max-width: 612px)
+                font-size: toRem(16)
+            margin-top: toRem(27)
+        
+.content
+    &__text
+        h1
+            span:first-of-type
+                color: #FF9900
+            span:last-of-type
+                display: block
+                position: relative
+                margin-top: toRem(3)
+                img 
+                    position: absolute
+                    width: toRem(295.37)
+                    height: toRem(82.17) 
+                    left: toRem(-20)
+                    top: toRem(-10)
+                    @media(max-width: 612px)
+                        width: toRem(217)
+                        height: toRem(52) 
+                        left: toRem(-31)
+                        top: toRem(-6)
+.content
+    button
+        padding: toRem(11.8) toRem(35)
+        background:  #FF9900
+        border-radius: toRem(13.325)
+        color: #fff
+        font-family: "Poppins"
+        font-size: toRem(14.8)
+        margin-top: toRem(41)
+        text-transform: uppercase
+        @media(max-width: 612px)
+            text-transform: none
+            font-weight: 700
+        &:hover
+            background-color: #ff9900e8
+            
+.content 
+    margin-top: toRem(81)
+
+.content
+    &__image
+        margin-top: toRem(51)
+
+.services
+    &__text
+        display: flex
+        justify-content: center
+        flex-direction: column
+        align-items: center
+        margin-top: toRem(138)
+        p:first-of-type
+            font-family: 'Poppins'
+            font-weight: 500
+            font-size: toRem(13.8)
+            color: #7DE29E
+        h2 
+            font-family: 'Poppins'
+            font-weight: 600
+            font-size: toRem(27.7)
+            color: #3A3A3A
+            text-align: center
+        p:nth-of-type(2)
+            font-family: 'DM Sans'
+            font-weight: 400
+            font-size: toRem(13.8)
+            max-width: 449px
+            text-align: center
+            color: #222222
+
+.services
+    &__list
+        
+        display: flex
+        justify-content: center
+        flex-wrap: wrap
+    &__service
+        margin-top: toRem(55)
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        max-width: toRem(274)
+        width: 100%
+        
+
+        min-height: toRem(248)
+        background: #FFFFFF
+        border: 0.69447px solid #F1F1F1
+        img
+            max-width: toRem(74)
+        h4
+            margin-top: toRem(20)
+            font-family: "Poppins"
+            font-size: toRem(13.89)
+            font-weight: 500
+            color: #222222
+        p
+            margin-top: toRem(13)
+            font-family: "DM Sans"
+            font-size: toRem(12.5)
+            max-width: toRem(218)
+            color: #222222
+            text-align: center
+    &__service:nth-child(2)
+        box-shadow: 2.08341px 2.77788px 25.0009px rgba(203, 199, 228, 0.37)
+        margin-left: toRem(19)
+        margin-right: toRem(19)
+
+
+@media(max-width: 1038px)
+    .content
+        justify-content: center
+        &__text
+                display: flex
+                flex-direction: column
+                align-items: center
+
+@media(max-width: 825px)
+    .wrapper
+        padding: 0
+    .nav
+        display: none
+
+    .header
+        padding-top: toRem(30)
+        padding-left: toRem(20)
+        padding-right: toRem(20)
+        padding-bottom: toRem(20)
+        background-color: #1F1F1F
+    .logo
+        img:nth-child(1)
+            display: none
+        img:nth-child(2)
+            display: block
+        span:nth-child(2)
+            color: #fff
+    .mobile-nav
+        display: flex
+        justify-content: end
+        width: 100%
+        button
+            margin-left: auto
+            outline: none
+            background: none
+            border: 
+            position: relative
+            z-index: 6
+        &__slide
+            position: fixed
+            left: 0
+            top: 0
+            width: 100%
+            background: #1F1F1F
+            display: flex
+            justify-content: center
+            color: #fff
+            text-transform: uppercase
+            align-items: center
+            text-align: center
+            padding: toRem(30) 0
+            z-index: 5
+            transition: top 0.5s linear
+            li
+                margin-top: toRem(25)
+            li:hover
+                text-decoration: underline
+                cursor: pointer
+            &_hidden
+                top: -100%        

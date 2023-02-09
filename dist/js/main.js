@@ -1,0 +1,1 @@
+(()=>{var e=document.querySelector("#show-mobile-nav"),i=document.querySelector("#mobile-menu-slide");e.addEventListener("click",(function(){i.classList.toggle("mobile-nav__slide_hidden")}))})();
